@@ -165,8 +165,8 @@ main .main-contents .main_menu nav ul li {
   align-items: center;
 }
 main .main-contents .main_menu nav ul li .img-container {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -175,5 +175,13 @@ main .main-contents .main_menu nav ul li .img-container img {
      object-fit: contain;
 }
 main .main-contents .main_menu nav ul li .text {
+  padding-left: 0.2rem;
   font-size: 0.8rem;
+}
+
+footer .footer_top {
+  display: flex;
+}
+footer .footer_top .left {
+  display: flex;
 }
