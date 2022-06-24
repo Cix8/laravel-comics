@@ -44,8 +44,8 @@ header .header_top .contents ul li:first-child {
 }
 header .header_contents {
   width: 70%;
+  height: 100px;
   margin: 0 auto;
-  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,10 +63,15 @@ header .header_contents nav ul {
 }
 header .header_contents nav ul li {
   padding: 0 1rem;
-  border-bottom: 1px solid transparent;
+  border-bottom: 5px solid transparent;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 95px;
+}
+header .header_contents nav ul li:hover {
+  border-color: #0282f9;
+  color: #0282f9;
 }
 header .header_contents nav .search-container {
   padding-left: 1rem;
