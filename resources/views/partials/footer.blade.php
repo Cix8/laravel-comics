@@ -78,7 +78,7 @@
                         @foreach ($footer_links["socials"] as $link)
                             <li>
                                 <a href="">
-                                    <i class="fab fa-{{ $link }}"></i>
+                                    <img src="{{ asset('images/footer-'.$link.'.png') }}" alt="{{ $link.' logo' }}">
                                 </a>
                             </li>
                         @endforeach
