@@ -63,6 +63,28 @@
         </div>
     </div>
     <div class="footer_bottom">
-
+        <div class="container">
+            <div class="left">
+                <div class="btn-container">
+                    <a href="">SIGN-UP NOW!</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="col">
+                    <a href="">FOLLOW US</a>
+                </div>
+                <div class="col">
+                    <ul>
+                        @foreach ($footer_links["socials"] as $link)
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-{{ $link }}"></i>
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>

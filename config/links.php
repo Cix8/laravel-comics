@@ -55,13 +55,13 @@ return [
             "DC Kids",
             "DC Universe",
             "DC Power Visa"
+        ],
+        "socials" => [
+            "facebook",
+            "twitter",
+            "youtube",
+            "pinterest",
+            "periscope"
         ]
-    ],
-    "socials" => [
-        "facebook",
-        "twitter",
-        "youtube",
-        "pinterest",
-        "periscope"
     ]
 ];

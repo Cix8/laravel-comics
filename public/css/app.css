@@ -179,6 +179,9 @@ main .main-contents .main_menu nav ul li .text {
   font-size: 0.8rem;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
 footer .footer_top {
   padding: 3rem 0;
   background-image: url("../images/footer-bg.jpg");
@@ -196,6 +199,7 @@ footer .footer_top .container .left {
 }
 footer .footer_top .container .left ul {
   margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 footer .footer_top .container .left ul li.title {
   color: #ffffff;
@@ -208,7 +212,7 @@ footer .footer_top .container .left ul li.link {
 }
 footer .footer_top .container .right {
   position: absolute;
-  top: -30%;
+  top: -25%;
   right: 30%;
   transform: translateX(50%);
   width: 50%;
@@ -221,4 +225,48 @@ footer .footer_top .credits {
 }
 footer .footer_top .credits a {
   color: #0282f9;
+}
+footer .footer_bottom {
+  position: relative;
+  z-index: 99;
+  padding: 1rem 0;
+  background-color: #303030;
+}
+footer .footer_bottom .container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_bottom .container a {
+  font-weight: bold;
+}
+footer .footer_bottom .container .left {
+  color: #ffffff;
+}
+footer .footer_bottom .container .left a {
+  display: inline-block;
+  padding: 1rem;
+  border: 2px solid #0282f9;
+}
+footer .footer_bottom .container .right {
+  display: flex;
+  align-items: center;
+}
+footer .footer_bottom .container .right a {
+  color: #0282f9;
+}
+footer .footer_bottom .container .right ul {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+footer .footer_bottom .container .right ul li {
+  padding: 0 0.7rem;
+}
+footer .footer_bottom .container .right ul li i {
+  display: inline-block;
+  font-size: 2rem;
+  color: #797979;
 }

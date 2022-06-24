@@ -1,4 +1,8 @@
 footer {
+    a:hover {
+        text-decoration: underline;
+    }
+
     .footer_top {
         padding: 3rem 0;
         background-image: url("../images/footer-bg.jpg");
@@ -16,6 +20,7 @@ footer {
 
                 ul {
                     margin-bottom: 1rem;
+                    padding-right: 1rem;
 
                     li {
                         &.title {
@@ -35,7 +40,7 @@ footer {
 
             .right {
                 position: absolute;
-                top: -30%;
+                top: -25%;
                 right: 30%;
                 transform: translateX(+50%);
                 width: 50%;
@@ -50,6 +55,61 @@ footer {
 
             a {
                 color: $app_lightblue;
+            }
+        }
+
+    }
+
+    .footer_bottom {
+        position: relative;
+        z-index: 99;
+        padding: 1rem 0;
+        background-color: $footer-grey;
+
+        .container {
+            width: $general_width;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                font-weight: bold;
+            }
+
+            .left {
+                color: $app_white;
+
+                a {
+                    display: inline-block;
+                    padding: 1rem;
+                    border: 2px solid $app_lightblue;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: $app_lightblue;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 1rem;
+
+                    li {
+                        padding: 0 .7rem;
+
+                        i {
+                            display: inline-block;
+                            font-size: 2rem;
+                            color: $app_lightgrey;
+                        }
+                    }
+                }
             }
         }
 
