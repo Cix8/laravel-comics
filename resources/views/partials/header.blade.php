@@ -19,7 +19,7 @@
             <ul>
                 @foreach ($header_links as $link)
                     <li>
-                        <a href="">{{ $link }}</a>
+                        <a href="{{ route('comics') }}">{{ $link }}</a>
                     </li>
                 @endforeach
             </ul>

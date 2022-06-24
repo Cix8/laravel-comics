@@ -6,6 +6,7 @@ footer {
     .footer_top {
         padding: 3rem 0;
         background-image: url("../images/footer-bg.jpg");
+        overflow: hidden;
 
         .container {
             position: relative;
@@ -61,8 +62,6 @@ footer {
     }
 
     .footer_bottom {
-        position: relative;
-        z-index: 99;
         padding: 1rem 0;
         background-color: $footer-grey;
 

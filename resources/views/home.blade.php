@@ -1,10 +1,10 @@
 @extends('layout.app')
 
 @section('title')
-    DC Comics | home
+    DC Comics | Home
 @endsection
 
-@section('home_contents')
+@section('app_contents')
     <div class="banner"></div>
     <div class="main-contents">
         <div class="container">

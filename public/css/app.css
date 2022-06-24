@@ -111,6 +111,13 @@ main .main-contents .container .title {
   background-color: #0282f9;
   transform: translateY(-50%);
 }
+main .main-contents .container .btn-home {
+  padding: 1rem 0 0;
+}
+main .main-contents .container .btn-home:hover {
+  text-decoration: underline;
+  color: #0282f9;
+}
 main .main-contents .container .contents {
   padding-bottom: 1rem;
   font-size: 0.7rem;
@@ -147,6 +154,27 @@ main .main-contents .container .contents .btn-container a {
 }
 main .main-contents .container .contents .btn-container a:hover {
   text-decoration: underline;
+}
+main .main-contents .container .comics_contents {
+  padding: 2rem 0;
+}
+main .main-contents .container .comics_contents ul .card_comics {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+main .main-contents .container .comics_contents ul .card_comics .card_img {
+  width: 30%;
+}
+main .main-contents .container .comics_contents ul .card_comics ul.card_info {
+  width: 50%;
+  padding-left: 1.5rem;
+}
+main .main-contents .container .comics_contents ul .card_comics ul.card_info li {
+  padding: 0.5rem 0;
+}
+main .main-contents .container .comics_contents ul .card_comics ul.card_info li strong {
+  color: #0282f9;
 }
 main .main-contents .main_menu {
   padding: 4rem 0;
@@ -185,6 +213,7 @@ footer a:hover {
 footer .footer_top {
   padding: 3rem 0;
   background-image: url("../images/footer-bg.jpg");
+  overflow: hidden;
 }
 footer .footer_top .container {
   position: relative;
@@ -227,8 +256,6 @@ footer .footer_top .credits a {
   color: #0282f9;
 }
 footer .footer_bottom {
-  position: relative;
-  z-index: 99;
   padding: 1rem 0;
   background-color: #303030;
 }

@@ -26,3 +26,15 @@ Route::get('/', function () {
         "footer_links" => $footer_links
     ]);
 })->name('home');
+
+Route::get('/comics', function() {
+    $data_links = config('links');
+    $header_links = $data_links["header_links"];
+    $footer_links = $data_links["footer_links"];
+    $series_data = config('comics');
+    return view('comics_section', [
+        "header_links" => $header_links,
+        "series_data" => $series_data,
+        "footer_links" => $footer_links
+    ]);
+})->name('comics');

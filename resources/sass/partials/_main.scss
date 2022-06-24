@@ -23,6 +23,15 @@ main {
                 transform: translateY(-50%);
             }
 
+            .btn-home {
+                padding: 1rem 0 0;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $app_lightblue;
+                }
+            }
+
             .contents {
                 padding-bottom: 1rem;
                 font-size: .7rem;
@@ -62,6 +71,35 @@ main {
 
                         &:hover {
                             text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .comics_contents {
+                padding: 2rem 0;
+
+                ul {
+                    .card_comics {
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem 0;
+
+                        .card_img {
+                            width: 30%;
+                        }
+
+                        ul.card_info {
+                            width: 50%;
+                            padding-left: 1.5rem;
+
+                            li {
+                                padding: .5rem 0;
+
+                                strong {
+                                    color: $app_lightblue;
+                                }
+                            }
                         }
                     }
                 }
