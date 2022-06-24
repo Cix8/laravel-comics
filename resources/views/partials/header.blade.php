@@ -17,7 +17,7 @@
         </div>
         <nav>
             <ul>
-                @foreach ($links as $link)
+                @foreach ($header_links as $link)
                     <li>
                         <a href="">{{ $link }}</a>
                     </li>
