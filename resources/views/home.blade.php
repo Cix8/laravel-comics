@@ -41,6 +41,22 @@
                     </div>
                 </div>
             </div>
+            <div class="main_menu">
+                <nav>
+                    <ul>
+                        @foreach ($buy_links as $key => $item)
+                            <li>
+                                <div class="img-container">
+                                    <img src="{{ asset('images/buy-'.$item) }}" alt="{{ $key }}">
+                                </div>
+                                <div class="text">
+                                    <a href="">{{ strtoupper(str_replace("_", " ", $key)) }}</a>
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                </nav>
+            </div>
         </div>
     </main>
 

@@ -13,6 +13,13 @@ return [
         "News",
         "Shop"
     ],
+    "buy_links" => [
+        "digital_comics" => "comics-digital-comics.png",
+        "dc_merchandise" => "comics-merchandise.png",
+        "subscriptions" => "comics-subscriptions.png",
+        "comic_shop_locator" => "comics-shop-locator.png",
+        "dc_power_visa" => "dc-power-visa.svg"
+    ],
     "footer_links" => [
         "dc_comics" => [
             "Characters",

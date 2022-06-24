@@ -99,7 +99,7 @@ main .banner {
   background-size: cover;
 }
 main .main-contents {
-  padding-bottom: 1rem;
+  color: #ffffff;
 }
 main .main-contents .container {
   width: 70%;
@@ -109,11 +109,10 @@ main .main-contents .container .title {
   display: inline-block;
   padding: 1rem 2rem;
   background-color: #0282f9;
-  color: #ffffff;
   transform: translateY(-50%);
 }
 main .main-contents .container .contents {
-  color: #ffffff;
+  padding-bottom: 1rem;
   font-size: 0.7rem;
 }
 main .main-contents .container .contents ul {
@@ -148,4 +147,33 @@ main .main-contents .container .contents .btn-container a {
 }
 main .main-contents .container .contents .btn-container a:hover {
   text-decoration: underline;
+}
+main .main-contents .main_menu {
+  padding: 4rem 0;
+  background-color: #0282f9;
+}
+main .main-contents .main_menu nav {
+  width: 70%;
+  margin: 0 auto;
+}
+main .main-contents .main_menu nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+main .main-contents .main_menu nav ul li {
+  display: flex;
+  align-items: center;
+}
+main .main-contents .main_menu nav ul li .img-container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+main .main-contents .main_menu nav ul li .img-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .main-contents .main_menu nav ul li .text {
+  font-size: 0.8rem;
 }
