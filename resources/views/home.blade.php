@@ -18,7 +18,7 @@
                     @endforeach
                 </ul>
                 <div class="btn-container">
-                    <a href="">LOAD MORE</a>
+                    <a href="{{ route('comics') }}">LOAD MORE</a>
                 </div>
             </div>
         </div>
