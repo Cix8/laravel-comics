@@ -20,6 +20,7 @@ a {
 
 img {
   width: 100%;
+  max-height: 100%;
 }
 
 header .header_top {
@@ -97,6 +98,9 @@ main .banner {
   background-position: top;
   background-size: cover;
 }
+main .main-contents {
+  padding-bottom: 1rem;
+}
 main .main-contents .container {
   width: 70%;
   margin: 0 auto;
@@ -110,4 +114,38 @@ main .main-contents .container .title {
 }
 main .main-contents .container .contents {
   color: #ffffff;
+  font-size: 0.7rem;
+}
+main .main-contents .container .contents ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .main-contents .container .contents ul .card {
+  width: 11.5vw;
+  padding: 0.5rem;
+}
+main .main-contents .container .contents ul .card_img {
+  height: 11.5vw;
+}
+main .main-contents .container .contents ul .card_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .main-contents .container .contents ul .card_title {
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+main .main-contents .container .contents .btn-container {
+  text-align: center;
+}
+main .main-contents .container .contents .btn-container a {
+  display: inline-block;
+  padding: 0.5rem 2.5rem;
+  background-color: #0282f9;
+  font-weight: bold;
+}
+main .main-contents .container .contents .btn-container a:hover {
+  text-decoration: underline;
 }

@@ -30,12 +30,15 @@
                                 </div>
                                 <div class="card_title">
                                     <h3>
-                                        {{ $single_data["title"] }}
+                                        {{ $single_data["series"] }}
                                     </h3>
                                 </div>
                             </li>
                         @endforeach
                     </ul>
+                    <div class="btn-container">
+                        <a href="">LOAD MORE</a>
+                    </div>
                 </div>
             </div>
         </div>
