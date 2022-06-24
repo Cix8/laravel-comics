@@ -95,6 +95,9 @@ main {
 
                         .card_img {
                             width: 30%;
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            overflow: hidden;
                         }
 
                         ul.card_info {
