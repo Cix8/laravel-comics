@@ -166,13 +166,20 @@ main .main-contents .container .comics_contents {
 main .main-contents .container .comics_contents ul .card_comics {
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.5rem;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+main .main-contents .container .comics_contents ul .card_comics:hover {
+  margin: 5rem 0;
+  border-radius: 30px;
+  box-shadow: 10px 10px 100px #0282f9;
 }
 main .main-contents .container .comics_contents ul .card_comics .card_img {
   width: 30%;
 }
 main .main-contents .container .comics_contents ul .card_comics ul.card_info {
-  width: 50%;
+  max-width: 70%;
   padding-left: 1.5rem;
 }
 main .main-contents .container .comics_contents ul .card_comics ul.card_info li {
@@ -180,6 +187,9 @@ main .main-contents .container .comics_contents ul .card_comics ul.card_info li 
 }
 main .main-contents .container .comics_contents ul .card_comics ul.card_info li strong {
   color: #0282f9;
+}
+main .main-contents .container .comics_contents ul .card_comics ul.card_info li span {
+  font-size: 0.9rem;
 }
 main .main-contents .main_menu {
   padding: 4rem 0;
