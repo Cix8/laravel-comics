@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = config('links');
+    $header_data = [
+        "links" => $data["header_links"]
+    ];
+    return view('home', $header_data);
 })->name('home');

@@ -1,22 +1,78 @@
 header {
+    .header_top {
+        background-color: $app_lightblue;
+        font-size: .7rem;
+        color: $app_white;
+
+        .contents {
+            width: $general_width;
+            margin: 0 auto;
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+
+                li {
+                    padding: .5rem 0;
+                }
+
+                li:first-child {
+                    padding: .5rem 1rem;
+                }
+            }
+        }
+    }
+
     .header_contents {
         width: $general_width;
         margin: 0 auto;
         padding: 1rem 0;
         display: flex;
+        justify-content: space-between;
         align-items: center;
 
         .logo-container {
-            width: 80px;
+            width: 60px;
             flex-shrink: 0;
         }
 
         nav {
+            display: flex;
+            align-items: center;
+
             ul {
                 display: flex;
 
                 li {
-                    padding: 0 .5rem;
+                    padding: 0 1rem;
+                    border-bottom: 1px solid transparent;
+                    font-size: .8rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+
+            .search-container {
+                padding-left: 1rem;
+                border-bottom: 2px solid transparent;
+
+                &:focus-within {
+                    border-color: $app_lightblue;
+                }
+
+                input {
+                    max-width: 100px;
+                    border: 0;
+                    text-align: right;
+                    font-size: 1rem;
+
+                    &:focus-visible {
+                        outline: 0;
+                    }
+                }
+
+                i {
+                    color: $app_lightgrey;
                 }
             }
         }
