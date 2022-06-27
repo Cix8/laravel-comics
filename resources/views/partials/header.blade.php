@@ -19,7 +19,11 @@
             <ul>
                 @foreach ($header_links as $link)
                     <li class="{{ Request::route()->getName() === strtolower($link) ? 'active' : '' }}">
-                        <a href="{{ route(strtolower($link)) }}">{{ $link }}</a>
+                        <a href="{{ route(strtolower($link)) }}">
+                            <span>
+                                {{ $link }}
+                            </span>
+                        </a>
                     </li>
                 @endforeach
             </ul>
