@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('title')
-    DC Comics | titolo
+    DC Comics | {{$series_data->all()[$id - 1]['title']}}
 @endsection
 
 @section('app_contents')

@@ -33,6 +33,7 @@ Route::get('/comics-info/{id}', function($id) use ($data_links, $series) {
     $series_collection = collect($series);
     $current_data = $series_collection->where('id', $id);
     $current_data = [
+        "id" => $id,
         "series_data" => $current_data
     ];
     $data = array_merge($data_links, $current_data);
