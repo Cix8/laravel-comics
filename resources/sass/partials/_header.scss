@@ -50,8 +50,9 @@ header {
                     font-weight: bold;
                     text-transform: uppercase;
                     line-height: 95px;
+                    cursor: pointer;
 
-                    &:hover {
+                    &.active {
                         border-color: $app_lightblue;
                         color: $app_lightblue;
                     }

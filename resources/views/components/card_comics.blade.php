@@ -4,12 +4,12 @@
     </div>
     <ul class="card_info">
         @foreach ($single_data as $key => $single_value)
-            @if ($key !== 'thumb' && gettype($single_value) !== 'array')
+            @if (($key !== 'thumb' && $key !== 'id') && gettype($single_value) !== 'array')
                 <li>
                     <strong>{{ ucfirst(str_replace("_", " ", $key)) }}:</strong>
                     <span>{{ ucfirst($single_value) }}</span>
                 </li>
-            @elseif ($key !== 'thumb' && gettype($single_value) === 'array')
+            @elseif (($key !== 'thumb' && $key !== 'id')  && gettype($single_value) === 'array')
                 <li>
                     <strong>{{ ucfirst(str_replace("_", " ", $key)) }}:</strong>
                     <span>{{ implode(", ", array_slice($single_value, 0, 5)) }}</span>

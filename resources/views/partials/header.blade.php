@@ -18,8 +18,8 @@
         <nav>
             <ul>
                 @foreach ($header_links as $link)
-                    <li>
-                        <a href="{{ route('comics') }}">{{ $link }}</a>
+                    <li class="{{ Request::route()->getName() === strtolower($link) ? 'active' : '' }}">
+                        <a href="{{ route(strtolower($link)) }}">{{ $link }}</a>
                     </li>
                 @endforeach
             </ul>

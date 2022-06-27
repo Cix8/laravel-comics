@@ -68,8 +68,9 @@ header .header_contents nav ul li {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 95px;
+  cursor: pointer;
 }
-header .header_contents nav ul li:hover {
+header .header_contents nav ul li.active {
   border-color: #0282f9;
   color: #0282f9;
 }

@@ -20,13 +20,15 @@
 
 <body>
 
-    @include('partials.header')
-
-    <main>
-        @yield('app_contents')
-    </main>
-
-    @include('partials.footer')
+    <div class="app">
+        @include('partials.header')
+    
+        <main>
+            @yield('app_contents')
+        </main>
+    
+        @include('partials.footer')
+    </div>
 
 </body>
 
