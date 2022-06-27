@@ -173,7 +173,7 @@ main .main-contents .container .comics_contents ul .card_comics {
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  transition: all 0.5s linear;
+  transition: all 0.8s;
   cursor: pointer;
 }
 main .main-contents .container .comics_contents ul .card_comics:hover {
