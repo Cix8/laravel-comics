@@ -46,10 +46,22 @@ main {
 
                         &_img {
                             height: $card_width;
+                            overflow: hidden;
 
                             img {
                                 object-fit: cover;
                                 object-position: top;
+                                transition: all ease-in-out .6s;
+                            }
+                        }
+
+                        &:hover {
+
+                            .card_img {
+
+                                img {
+                                    transform: scale(1.4) rotate(-10deg);
+                                }
                             }
                         }
 

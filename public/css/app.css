@@ -143,12 +143,17 @@ main .main-contents .container .contents ul .card {
 }
 main .main-contents .container .contents ul .card_img {
   height: 11.5vw;
+  overflow: hidden;
 }
 main .main-contents .container .contents ul .card_img img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  transition: all ease-in-out 0.6s;
+}
+main .main-contents .container .contents ul .card:hover .card_img img {
+  transform: scale(1.4) rotate(-10deg);
 }
 main .main-contents .container .contents ul .card_title {
   padding: 1rem 0;
