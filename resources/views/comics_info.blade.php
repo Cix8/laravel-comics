@@ -14,22 +14,6 @@
             @foreach ($series_data as $single_data)
                 <ul>
                     @include('components.card_comics', [$single_data])
-                    {{-- <li class="poster">
-                        <img src="{{ $data['thumb'] }}" alt="{{ $data['title'] }}">
-                    </li>
-                    @foreach ($data as $key => $single_value)
-                        @if ($key !== 'thumb' && $key !== 'id' && gettype($single_value) !== 'array')
-                            <li>
-                                <strong>{{ ucfirst(str_replace('_', ' ', $key)) }}:</strong>
-                                <span>{{ ucfirst($single_value) }}</span>
-                            </li>
-                        @elseif ($key !== 'thumb' && $key !== 'id' && gettype($single_value) === 'array')
-                            <li>
-                                <strong>{{ ucfirst(str_replace('_', ' ', $key)) }}:</strong>
-                                <span>{{ implode(', ', array_slice($single_value, 0, 5)) }}</span>
-                            </li>
-                        @endif
-                    @endforeach --}}
                 </ul>
             @endforeach
         </div>
