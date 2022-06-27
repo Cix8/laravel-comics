@@ -29,9 +29,13 @@ Route::get('/comics', function() use ($data_links, $series_data) {
     return view('comics_section', $data);
 })->name('comics');
 
-Route::get('/comics-info/{id}', function($id) use ($data_links, $series_data) {
-    dd($id);
-    $data = array_merge($data_links, $series_data);
+Route::get('/comics-info/{id}', function($id) use ($data_links, $series) {
+    $series_collection = collect($series);
+    $current_data = $series_collection->where('id', $id);
+    $current_data = [
+        "series_data" => $current_data
+    ];
+    $data = array_merge($data_links, $current_data);
     return view('comics_info', $data);
 })->name('comics_info');
 
