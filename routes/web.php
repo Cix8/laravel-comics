@@ -32,6 +32,9 @@ Route::get('/comics', function() use ($data_links, $series_data) {
 Route::get('/comics-info/{id}', function($id) use ($data_links, $series) {
     $series_collection = collect($series);
     $current_data = $series_collection->where('id', $id)->first();
+    if (!$current_data) {
+        return abort(404);
+    }
     $current_data = [
         "single_data" => $current_data
     ];
