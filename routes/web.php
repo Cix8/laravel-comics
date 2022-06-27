@@ -31,10 +31,9 @@ Route::get('/comics', function() use ($data_links, $series_data) {
 
 Route::get('/comics-info/{id}', function($id) use ($data_links, $series) {
     $series_collection = collect($series);
-    $current_data = $series_collection->where('id', $id);
+    $current_data = $series_collection->where('id', $id)->first();
     $current_data = [
-        "id" => $id,
-        "series_data" => $current_data
+        "single_data" => $current_data
     ];
     $data = array_merge($data_links, $current_data);
     return view('comics_info', $data);
